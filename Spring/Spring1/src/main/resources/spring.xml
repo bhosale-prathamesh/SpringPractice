@@ -4,8 +4,10 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="org.prathamesh.Person">
+<!--    <bean id="person" class="org.prathamesh.Person" scope="prototype">  for multiple objects, singleton for single-->
 
+    <bean id="person" class="org.prathamesh.Person">
+        <property name="age" value="21"></property>
     </bean>
 
 </beans>

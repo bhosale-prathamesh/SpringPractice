@@ -6,7 +6,7 @@
 
 <!--    <bean id="person" class="org.prathamesh.Person" scope="prototype">  for multiple objects, singleton for single-->
 
-    <bean id="person" class="org.prathamesh.Person" autowire="byName">
+    <bean id="person" class="org.prathamesh.Person" autowire="byType">
 <!--        <constructor-arg value="21"/>-->
 <!--        <constructor-arg ref="laptop"/>-->
         <!-- Sequence is important if no type is mentioned use index for total control,
@@ -16,7 +16,7 @@
 <!--        <property name="lap" ref="laptop"/>-->
     </bean>
 
-    <bean id="com" class="org.prathamesh.Laptop"/>
+    <bean id="com" class="org.prathamesh.Laptop" primary="true"/>
     <bean id="com1" class="org.prathamesh.Desktop"/>
 
 </beans>

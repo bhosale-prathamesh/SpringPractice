@@ -8,6 +8,12 @@ public class Person {
         System.out.println("Person Object Created");
     }
 
+    public Person(int age, Laptop lap) {
+//        System.out.println("Param Constructor");
+        this.age = age;
+        this.lap = lap;
+    }
+
     public int getAge() {
         return age;
     }

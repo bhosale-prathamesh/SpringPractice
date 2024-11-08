@@ -13,10 +13,12 @@
          add ConstructorProperties for using names-->
 
         <property name="age" value="21"/>
-        <property name="com" ref="com"/>
+        <property name="com" >
+            <bean class="org.prathamesh.Laptop" primary="true"/>
+        </property>
     </bean>
 
-    <bean id="com" class="org.prathamesh.Laptop" primary="true"/>
-    <bean class="org.prathamesh.Desktop" lazy-init="true"/>
+
+<!--    <bean class="org.prathamesh.Desktop" lazy-init="true"/>-->
 
 </beans>

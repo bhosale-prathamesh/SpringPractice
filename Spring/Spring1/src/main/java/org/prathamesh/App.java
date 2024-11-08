@@ -13,8 +13,8 @@ public class App
 //        person.setAge(22);
         System.out.println(person.getAge());
         person.code();
-
-        Computer com = context.getBean(Computer.class); //Using the primary bean as no name given
-        Desktop obj = context.getBean(Desktop.class);
+//
+//        Computer com = context.getBean(Computer.class); //Using the primary bean as no name given
+//        Desktop obj = context.getBean(Desktop.class);
     }
 }

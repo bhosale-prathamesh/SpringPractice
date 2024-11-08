@@ -9,9 +9,12 @@ public class App
     {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Person person = (Person) context.getBean("person");
+        Person person = context.getBean("person",Person.class);
 //        person.setAge(22);
         System.out.println(person.getAge());
         person.code();
+
+        Computer com = context.getBean(Computer.class); //Using the primary bean as no name given
+        Desktop obj = context.getBean(Desktop.class);
     }
 }

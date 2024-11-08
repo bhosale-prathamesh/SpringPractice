@@ -17,6 +17,6 @@
     </bean>
 
     <bean id="com" class="org.prathamesh.Laptop" primary="true"/>
-    <bean id="com1" class="org.prathamesh.Desktop" lazy-init="true"/>
+    <bean class="org.prathamesh.Desktop" lazy-init="true"/>
 
 </beans>

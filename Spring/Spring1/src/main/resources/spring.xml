@@ -8,6 +8,9 @@
 
     <bean id="person" class="org.prathamesh.Person">
         <property name="age" value="21"></property>
+        <property name="lap" ref="laptop"></property>
     </bean>
+
+    <bean id="laptop" class="org.prathamesh.Laptop"></bean>
 
 </beans>
